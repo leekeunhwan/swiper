@@ -2,7 +2,7 @@ import { SvelteComponentTyped } from 'svelte';
 import { SwiperOptions, Swiper as SwiperClass } from '../types/';
 
 // @ts-ignore
-interface SwiperProps extends svelte.JSX.HTMLAttributes<HTMLElementTagNameMap['div']> {}
+interface SwiperProps extends Omit<svelte.JSX.HTMLAttributes<HTMLElementTagNameMap['div']>, 'autoplay'> {}
 interface SwiperProps extends SwiperOptions {}
 
 // @ts-ignore
